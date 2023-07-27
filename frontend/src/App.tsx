@@ -1,13 +1,11 @@
 import "./App.css";
-
-import Board from "./components/Board";
+import { RouterProvider } from "react-router-dom";
+import appRouter from "./routes/AppRoutes";
 
 function App() {
   return (
     <>
-      <div className="w-full h-screen px-8 sm:px-12 md:px-16 lg:px-20 bg-black">
-        <Board />
-      </div>
+      <RouterProvider router={appRouter} />
     </>
   );
 }
